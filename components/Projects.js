@@ -65,7 +65,7 @@ function Projects() {
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/10 to-purple-900/10"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+          <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : ''}`}>
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">Featured Projects</h2>
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
               Showcasing innovative solutions that push the boundaries of technology and design.
@@ -88,12 +88,12 @@ function Projects() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+          <div id="pro" className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
             {filteredProjects.map((project, index) => (
               <div 
                 key={project.id}
                 className={`group morph-card overflow-hidden cursor-pointer ${
-                  isVisible ? 'animate-scale-in' : 'opacity-0'
+                  isVisible ? 'animate-scale-in' : ''
                 }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
                 onClick={() => setSelectedProject(project)}
@@ -104,7 +104,7 @@ function Projects() {
                     alt={project.title}
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent  group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4 px-3 py-1 glass-card rounded-full text-sm">
                     {project.category}
                   </div>
@@ -127,7 +127,7 @@ function Projects() {
                     ))}
                   </div>
                   
-                  <button className="w-full py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  <button className="w-full py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transition-all duration-300  group-hover:opacity-100">
                     View Project
                   </button>
                 </div>

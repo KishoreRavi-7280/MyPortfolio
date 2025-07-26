@@ -20,13 +20,13 @@ function Hero() {
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden" data-name="hero" data-file="components/Hero.js">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-cyan-900/20"></div>
         
-        <div className="container mx-auto px-4 z-10">
+        <div id="hero" className="container mx-auto  px-4 z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="text-center lg:text-left animate-slide-left">
+            <div className=" lg:mx-10 lg:my-10 text-center lg:text-left animate-slide-left">
               <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-6">
                 <span className="gradient-text">Hello,</span>
                 <br />
-                <span className="text-white">I'm Alex</span>
+                <span className="text-white">I'm Kishore</span>
               </h1>
               
               <div className="h-12 sm:h-16 mb-6 sm:mb-8">
@@ -41,7 +41,7 @@ function Hero() {
                 Specializing in interactive design and immersive web solutions.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div id="btn1" className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
                   View My Work
                 </button>
@@ -50,7 +50,7 @@ function Hero() {
                 </button>
               </div>
 
-              <div className="flex justify-center lg:justify-start space-x-6 mt-8">
+              <div id="social-links" className="flex justify-center lg:justify-start space-x-6 mt-8">
                 {['github', 'linkedin', 'twitter', 'dribbble'].map((social, index) => (
                   <a
                     key={social}
@@ -66,11 +66,11 @@ function Hero() {
 
             <div className="flex justify-center lg:justify-end animate-slide-right">
               <div className="relative">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden glass-card floating-animation">
+                <div className=" img w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden glass-card floating-animation">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
                     alt="Profile"
-                    className="w-full h-full object-cover"
+                    className="lg:mx-auto w-full h-full object-cover"
                   />
                 </div>
                 

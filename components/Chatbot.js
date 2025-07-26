@@ -1,7 +1,7 @@
 function Chatbot() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [messages, setMessages] = React.useState([
-    { role: 'ai', content: 'Hi! I\'m Alex\'s AI assistant. How can I help you today?' }
+    { role: 'ai', content: 'Hi! I\'m Kishore\'s AI assistant. How can I help you today?' }
   ]);
   const [inputMessage, setInputMessage] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
@@ -15,17 +15,17 @@ function Chatbot() {
     setIsLoading(true);
 
     try {
-      const systemPrompt = `You are Alex's AI assistant for his portfolio website. Alex is a creative developer and designer with 5+ years of experience specializing in React, JavaScript, UI/UX design, and mobile development. 
+      const systemPrompt = `You are Kishore's AI assistant for his portfolio website. Kishore is a creative developer and designer with 5+ years of experience specializing in React, JavaScript, UI/UX design, and mobile development. 
 
-Key information about Alex:
+Key information about Kishore:
 - Services: Web Development, Mobile Apps, UI/UX Design, Consulting
-- Location: San Francisco, CA
-- Contact: hello@alexdev.com, +1 (555) 123-4567
+- Location: Trichy, TamilNadu, IN
+- Contact: kishoresde006@gmail.com, +91 7397753765
 - Expertise: React/Next.js, JavaScript/TypeScript, Node.js, Python, Mobile Development
 - Completed 150+ projects for 80+ happy clients
 - Available for freelance projects and consultations
 
-Answer questions about Alex's services, availability, skills, and how to work with him. Be helpful, professional, and concise.`;
+Answer questions about Kishore's services, availability, skills, and how to work with him. Be helpful, professional, and concise.`;
 
       const response = await invokeAIAgent(systemPrompt, inputMessage);
       
@@ -33,7 +33,7 @@ Answer questions about Alex's services, availability, skills, and how to work wi
     } catch (error) {
       setMessages(prev => [...prev, { 
         role: 'ai', 
-        content: 'Sorry, I encountered an error. Please try again or contact Alex directly.' 
+        content: 'Sorry, I encountered an error. Please try again or contact Kishore directly.' 
       }]);
     } finally {
       setIsLoading(false);
@@ -60,7 +60,7 @@ Answer questions about Alex's services, availability, skills, and how to work wi
                   </div>
                   <div>
                     <h4 className="text-white font-semibold">AI Assistant</h4>
-                    <p className="text-gray-400 text-xs">Ask me about Alex's services</p>
+                    <p className="text-gray-400 text-xs">Ask me about Kishore's services</p>
                   </div>
                 </div>
                 <button

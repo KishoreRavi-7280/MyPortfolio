@@ -21,11 +21,11 @@ function Navbar() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-cyan-400 to-purple-500 flex items-center justify-center pulse-glow">
                 <div className="icon-code text-white text-lg"></div>
               </div>
-              <span className="text-xl font-bold gradient-text">Portfolio</span>
+              <span className="text-xl font-bold gradient-text">Kishore Ravi</span>
             </div>
 
             <div className="hidden md:flex space-x-6">
-              {['Home', 'About', 'Skills', 'Projects', 'Blog', 'Testimonials', 'Contact'].map((item, index) => (
+              {['Home', 'About', 'Skills', 'Projects', 'Blog',  'Contact'].map((item, index) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

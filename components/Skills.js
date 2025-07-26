@@ -47,9 +47,9 @@ function Skills() {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className={`${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
-              <h3 className="text-3xl font-bold text-white mb-8">Technical Proficiency</h3>
+              <h3 id="txt" className="text-3xl font-bold text-white mb-8">Technical Proficiency</h3>
               
-              <div className="space-y-6">
+              <div id="skill" className="space-y-6">
                 {skills.map((skill, index) => (
                   <div 
                     key={skill.name}
@@ -61,7 +61,7 @@ function Skills() {
                       <span className="text-cyan-400 font-bold">{skill.level}%</span>
                     </div>
                     
-                    <div className="h-3 bg-gray-700 rounded-full overflow-hidden">
+                    <div className=" w-60 h-2 md:h-3 bg-gray-700 rounded-full overflow-hidden">
                       <div 
                         className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out ${
                           animatedBars[skill.name] ? '' : 'w-0'

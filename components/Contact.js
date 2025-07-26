@@ -119,9 +119,9 @@ function Contact() {
               
               <div className="space-y-6 mb-8">
                 {[
-                  { icon: 'mail', title: 'Email', value: 'hello@alexdev.com', link: 'mailto:hello@alexdev.com' },
-                  { icon: 'phone', title: 'Phone', value: '+1 (555) 123-4567', link: 'tel:+15551234567' },
-                  { icon: 'map-pin', title: 'Location', value: 'San Francisco, CA', link: '#' }
+                  { icon: 'mail', title: 'Email', value: 'kishoresde006@gmail.com', link: 'kishoresde006@gmail.com' },
+                  { icon: 'phone', title: 'Phone', value: '+91 7397753765', link: 'tel:+91 7397753765' },
+                  { icon: 'map-pin', title: 'Location', value: 'Trichy, TamilNadu, IN', link: '#' }
                 ].map((contact, index) => (
                   <a 
                     key={contact.title}
