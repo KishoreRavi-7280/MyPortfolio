@@ -50,7 +50,7 @@ function Navbar() {
 
           {isOpen && (
             <div className="md:hidden mt-4 glass-card rounded-xl p-4 animate-scale-in">
-              {['Home', 'About', 'Skills', 'Projects', 'Blog', 'Testimonials', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Projects', 'Blog',  'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

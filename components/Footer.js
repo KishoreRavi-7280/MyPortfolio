@@ -63,11 +63,11 @@ function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="icon-phone text-cyan-400 text-lg"></div>
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-gray-300">+91 7397753765</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="icon-map-pin text-cyan-400 text-lg"></div>
-                  <span className="text-gray-300">San Francisco, CA</span>
+                  <span className="text-gray-300">Trichy, Tamilnadu, IN</span>
                 </div>
               </div>
             </div>

@@ -46,12 +46,12 @@ function About() {
               </div>
             </div>
 
-            <div className={`${isVisible ? 'animate-slide-right' : 'opacity-0'}`}>
-              <h3 className="text-3xl font-bold text-white mb-6">
+            <div id="con2" className={`${isVisible ? 'animate-slide-right' : 'opacity-0'}`}>
+              <h3 id="txt1" className="text-3xl font-bold text-white mb-6">
                 Bringing Ideas to Life Through Code & Design
               </h3>
               
-              <p className="text-lg text-gray-300 mb-6">
+              <p id="txt2" className="text-lg text-gray-300 mb-6">
                 With over 5 years of experience in web development and design, I specialize in creating 
                 immersive digital experiences that combine aesthetic appeal with functional excellence.
               </p>

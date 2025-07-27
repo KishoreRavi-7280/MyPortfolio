@@ -60,7 +60,7 @@ function Contact() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div id="contact-box1" className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className={`order-2 lg:order-1 ${isVisible ? 'animate-slide-right' : 'opacity-0'}`}>
               <form onSubmit={handleSubmit} className="morph-card p-8">
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -117,7 +117,7 @@ function Contact() {
             <div className={`order-1 lg:order-2 ${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-8">Let's Start a Conversation</h3>
               
-              <div className="space-y-6 mb-8">
+              <div id="contact-box" className="space-y-6 mb-8">
                 {[
                   { icon: 'mail', title: 'Email', value: 'kishoresde006@gmail.com', link: 'kishoresde006@gmail.com' },
                   { icon: 'phone', title: 'Phone', value: '+91 7397753765', link: 'tel:+91 7397753765' },

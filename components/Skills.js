@@ -3,11 +3,11 @@ function Skills() {
   const [animatedBars, setAnimatedBars] = React.useState({});
 
   const skills = [
-    { name: 'React/Next.js', level: 95, color: 'from-blue-400 to-cyan-400' },
-    { name: 'JavaScript/TypeScript', level: 90, color: 'from-yellow-400 to-orange-400' },
-    { name: 'UI/UX Design', level: 85, color: 'from-pink-400 to-purple-400' },
+    { name: 'Html5/CSS3', level: 95, color: 'from-blue-400 to-cyan-400' },
+    { name: 'React/Tailwindcss', level: 88, color: 'from-yellow-400 to-orange-400' },
+    { name: 'JavaScript/TypeScript', level: 83, color: 'from-pink-400 to-purple-400' },
     { name: 'Node.js/Express', level: 80, color: 'from-green-400 to-emerald-400' },
-    { name: 'Python/Django', level: 75, color: 'from-blue-600 to-blue-400' },
+    { name: 'Python/Django', level: 76, color: 'from-blue-600 to-blue-400' },
     { name: 'Mobile Development', level: 70, color: 'from-indigo-400 to-purple-400' }
   ];
 
@@ -76,7 +76,7 @@ function Skills() {
               </div>
             </div>
 
-            <div className={`${isVisible ? 'animate-slide-right' : 'opacity-0'}`}>
+            <div id="skillbox" className={`${isVisible ? 'animate-slide-right' : 'opacity-0'}`}>
               <div className="grid grid-cols-2 gap-6">
                 {[
                   { icon: 'monitor', title: 'Frontend Development', desc: 'React, Vue, Angular' },
