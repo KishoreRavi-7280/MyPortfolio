@@ -22,7 +22,7 @@ function Hero() {
         
         <div id="hero" className="container mx-auto  px-4 z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className=" lg:mx-10 lg:my-10 text-center lg:text-left animate-slide-left">
+            <div className=" lg:mx-10 lg:my-10 lg:ml-20 lg:mt-20 text-center lg:text-left animate-slide-left">
               <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-6">
                 <span className="gradient-text">Hello,</span>
                 <br />
@@ -42,15 +42,16 @@ function Hero() {
               </p>
 
               <div id="btn1" className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
+                <a href="#projects"
+                ><button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
                   View My Work
-                </button>
-                <button className="px-8 py-4 glass-card rounded-full font-semibold hover:scale-105 transition-all duration-300 border border-cyan-400/50">
-                  Download CV
-                </button>
+                </button></a>
+               <a href="../Pdf/Kishore Ravi Resume.pdf.pdf"> <button className="px-8 py-4 glass-card rounded-full font-semibold hover:scale-105 transition-all duration-300 border border-cyan-400/50">
+                View My CV
+                </button></a>
               </div>
 
-              <div id="social-links" className="flex justify-center lg:justify-start space-x-6 mt-8">
+              <div id="social-links" className="flex justify-center lg:justify-start space-x-6 mt-8 lg:ml-7">
                 {['github', 'linkedin', 'twitter', 'dribbble'].map((social, index) => (
                   <a
                     key={social}
@@ -64,11 +65,11 @@ function Hero() {
               </div>
             </div>
 
-            <div className="flex justify-center lg:justify-end animate-slide-right">
+            <div className="flex justify-center lg:justify-center animate-slide-right">
               <div className="relative">
                 <div className=" img w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden glass-card floating-animation">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    src="../Images/Kishore,s Profile pic.jpg"
                     alt="Profile"
                     className="lg:mx-auto w-full h-full object-cover"
                   />

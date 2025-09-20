@@ -3,12 +3,11 @@ function Skills() {
   const [animatedBars, setAnimatedBars] = React.useState({});
 
   const skills = [
-    { name: 'Html5/CSS3', level: 95, color: 'from-blue-400 to-cyan-400' },
-    { name: 'React/Tailwindcss', level: 88, color: 'from-yellow-400 to-orange-400' },
-    { name: 'JavaScript/TypeScript', level: 83, color: 'from-pink-400 to-purple-400' },
-    { name: 'Node.js/Express', level: 80, color: 'from-green-400 to-emerald-400' },
-    { name: 'Python/Django', level: 76, color: 'from-blue-600 to-blue-400' },
-    { name: 'Mobile Development', level: 70, color: 'from-indigo-400 to-purple-400' }
+    { name: 'Html5/ CSS3', level: 95, color: 'from-blue-400 to-cyan-400' },
+    { name: 'React/ Tailwind css', level: 88, color: 'from-yellow-400 to-orange-400' },
+    { name: 'Java Spring Boot', level: 83, color: 'from-pink-400 to-purple-400' },
+    { name: 'Node.js/ SQL', level: 80, color: 'from-green-400 to-emerald-400' },
+    { name: 'Docker containerization', level: 76, color: 'from-blue-600 to-blue-400' },
   ];
 
   React.useEffect(() => {
@@ -61,7 +60,7 @@ function Skills() {
                       <span className="text-cyan-400 font-bold">{skill.level}%</span>
                     </div>
                     
-                    <div className=" w-60 h-2 md:h-3 bg-gray-700 rounded-full overflow-hidden">
+                    <div className=" w-full h-2 md:h-3 bg-gray-700 rounded-full overflow-hidden">
                       <div 
                         className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out ${
                           animatedBars[skill.name] ? '' : 'w-0'
@@ -77,13 +76,13 @@ function Skills() {
             </div>
 
             <div id="skillbox" className={`${isVisible ? 'animate-slide-right' : 'opacity-0'}`}>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6 mr-[15px]">
                 {[
-                  { icon: 'monitor', title: 'Frontend Development', desc: 'React, Vue, Angular' },
-                  { icon: 'server', title: 'Backend Development', desc: 'Node.js, Python, PHP' },
-                  { icon: 'smartphone', title: 'Mobile Development', desc: 'React Native, Flutter' },
-                  { icon: 'database', title: 'Database Design', desc: 'MongoDB, PostgreSQL' },
-                  { icon: 'cloud', title: 'Cloud Services', desc: 'AWS, Google Cloud' },
+                  { icon: 'monitor', title: 'Frontend Development', desc: 'React Js, Tailwind Css' },
+                  { icon: 'server', title: 'Backend Development', desc: 'Node.js, Java Spring Boot' },
+                  { icon: 'smartphone', title: 'Prototyping', desc: 'Figma' },
+                  { icon: 'database', title: 'Database Design', desc: 'MongoDB, SQL' },
+                  { icon: 'cloud', title: 'Cloud Services', desc: 'AWS,'},
                   { icon: 'git-branch', title: 'Version Control', desc: 'Git, GitHub, GitLab' }
                 ].map((item, index) => (
                   <div 

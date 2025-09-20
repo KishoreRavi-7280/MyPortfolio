@@ -25,7 +25,7 @@ function Navbar() {
             </div>
 
             <div className="hidden md:flex space-x-6">
-              {['Home', 'About', 'Skills', 'Projects', 'Blog',  'Contact'].map((item, index) => (
+              {['Home', 'About', 'Skills', 'Projects',  'Contact'].map((item, index) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

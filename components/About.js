@@ -29,7 +29,7 @@ function About() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className={`${isVisible ? 'animate-slide-left' : 'opacity-0'}`}>
               <div className="relative">
-                <div id="img1" className="w-full h-96 rounded-3xl overflow-hidden glass-card">
+                <div id="img1" className="w-full h-96 lg:w-[65%] lg:flex lg:justify-center lg:ml-[20%] rounded-3xl overflow-hidden glass-card">
                   <img 
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
                     alt="Workspace" 
@@ -37,10 +37,10 @@ function About() {
                   />
                 </div>
                 
-                <div className="absolute -bottom-6 -right-2 w-32 h-32 glass-card rounded-2xl p-4 floating-animation">
+                <div className="absolute -bottom-6 right-8 w-32 h-32 glass-card rounded-2xl p-4 floating-animation">
                   <div className="text-center">
-                    <div className="text-3xl font-bold gradient-text">5+</div>
-                    <div className="text-sm text-purple-900">Years <br></br>Experience</div>
+                    <div className="text-3xl font-bold gradient-text-white">5+</div>
+                    <div className="text-sm text-white-900">Years <br></br>Experience</div>
                   </div>
                 </div>
               </div>
@@ -75,9 +75,9 @@ function About() {
                 ))}
               </div>
 
-              <button id="btn2" className="px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
+              {/* <button id="btn2" className="px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
                 Download Resume
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
